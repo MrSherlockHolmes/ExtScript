@@ -18,28 +18,12 @@
             (function(){$.getScript("https://rawgit.com/MrSherlockHolmes/ExtScript/master/experimental.js");}());
         }
     }
-    ext.tobool = function (str) {
-        if (str == '1') {
-            return true
-        } else if (str == 'true') {
-            return true
-        } else if (str == 't') {
-            return true
-        } else if (str == 'yes') {
-            return true
-        } else if (str == 'y') {
-            return true
-        } else {
-            return false
-        }
-    }
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             ['b', '@greenFlag ScriptExt installed?', 'check'],
             ['h', 'when @greenFlag ScriptExt installed', 'check'],
     //[' ', 'load library %m.library', 'install']
-            ['b', '%s to boolean', 'tobool', 'yes']
         ],
     menus: {
         library: ['data', 'experimental']
