@@ -14,7 +14,7 @@
         if (library == 'data') {
             (function(){$.getScript("https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/data.js");}());
         } else {
-            (function(){$.getScript("// entry required!");}());
+            (function(){$.getScript("https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/experimental.js");}());
         }
     }
     // Block and block menu descriptions
