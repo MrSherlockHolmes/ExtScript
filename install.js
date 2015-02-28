@@ -16,6 +16,7 @@
             ['b', '@greenFlag ScriptExt installed?', 'check'],
             ['h', 'when @greenFlag ScriptExt installed', 'check']
         ],
+        url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
     ScratchExtensions.register('ScriptExt', descriptor, ext);
 })();    
