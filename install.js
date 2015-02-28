@@ -44,13 +44,29 @@
             return false
         }
     }
+    ext.updown = function(num, both) {
+        if (Math.abs(num) == num) {
+            if (both == 'negative') {
+                return false
+            } else {
+                return true
+            }
+        } else {
+            if (both == 'negative') {
+                return true
+            } else {
+                return false
+            }
+        }
+    }
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['b', '%s to boolean', 'tobool', 'yes']
+            ['b', '%s to boolean', 'tobool', 'yes'],
+            ['b', 'is %n %m.both ?', 'updown', '-10', 'negative']
         ],
     menus: {
-        np: ['negative', 'positive']
+        both: ['negative', 'positive']
     },        
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
