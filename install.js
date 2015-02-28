@@ -12,9 +12,9 @@
     };
     ext.install = function () {
         if (library == 'data') {
-            (function(){$.getScript("https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/data.js");}());
+            (function(){$.getScript("https://rawgit.com/MrSherlockHolmes/ExtScript/master/install.js");}());
         } else {
-            (function(){$.getScript("https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/experimental.js");}());
+            (function(){$.getScript("https://rawgit.com/MrSherlockHolmes/ExtScript/master/experimental.js");}());
         }
     }
     // Block and block menu descriptions
