@@ -23,7 +23,7 @@
         blocks: [
             ['b', '@greenFlag ScriptExt installed?', 'check'],
             ['h', 'when @greenFlag ScriptExt installed', 'check'],
-    //[' ', 'load library m.library', 'install']
+    //[' ', 'load library %m.library', 'install']
         ],
     menus: {
         library: ['data', 'experimental']
