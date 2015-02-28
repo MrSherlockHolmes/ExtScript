@@ -4,7 +4,7 @@
     ext._getStatus = function () {
         return {
             status: 2,
-            msg: 'Ready'
+            msg: 'Installed'
         };
     };
     ext.check = function () {
@@ -38,7 +38,7 @@
     ext._getStatus = function () {
         return {
             status: 2,
-            msg: 'Ready'
+            msg: 'Installed'
         };
     };
     ext.tobool = function (str) {
@@ -62,7 +62,7 @@
             ['b', '%s to boolean', 'tobool', 'yes']
         ],
     menus: {
-        stuff: ['//add to stuff']
+        np: ['negative', 'positive']
     },        
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
