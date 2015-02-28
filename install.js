@@ -12,7 +12,7 @@
     };
     ext.install = function () {
         if (library == 'data') {
-            (function(){$.getScript("// entry required!");}());
+            (function(){$.getScript("https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/data.js");}());
         } else {
             (function(){$.getScript("// entry required!");}());
         }
