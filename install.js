@@ -10,6 +10,7 @@
     ext.check = function () {
       return true;
     };
+    //Not working :/
     ext.install = function () {
         if (library == 'data') {
             (function(){$.getScript("https://rawgit.com/MrSherlockHolmes/ExtScript/master/install.js");}());
@@ -22,7 +23,7 @@
         blocks: [
             ['b', '@greenFlag ScriptExt installed?', 'check'],
             ['h', 'when @greenFlag ScriptExt installed', 'check'],
-            [' ', 'install %m.library', 'install', 'data']
+    //[' ', 'load library m.library', 'install']
         ],
     menus: {
         library: ['data', 'experimental']
