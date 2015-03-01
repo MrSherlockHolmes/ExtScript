@@ -63,14 +63,18 @@
             return Math.SQRT2;
         }
     }
+    ext.admincheck = function() {
+      return Scratch.INIT_DATA.ADMIN;
+    }
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             ['b', '%s to boolean', 'tobool', 'yes'],
             ['b', 'is %n %m.both ?', 'updown', '-10', 'negative'],
             ['b', '%m.tf', 'truefalse', 'true'],
+            ['b', 'is user an admin?', 'admincheck'],
             ['-'],
-            ['r', '%m.mathobj', 'math', 'e'],
+            ['r', '%m.mathobj', 'math', 'e']
         ],
     menus: {
         both: ['negative', 'positive'],
