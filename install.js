@@ -10,6 +10,9 @@
     ext.check = function () {
       return true;
     };
+    ext.checkhat = function () {
+      return true;
+    };
     ext.install = function (install) {
         if (install == 'operators') {
             jQuery.getScript('https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/operators.js');
@@ -19,7 +22,7 @@
     var descriptor = {
         blocks: [
             ['b', '@greenFlag ScriptExt installed?', 'check'],
-            ['h', 'when @greenFlag ScriptExt installed', 'check'],
+            ['h', 'when @greenFlag ScriptExt installed', 'checkhat'],
             [' ', 'install %m.install', 'install', 'operators']
         ],
     menus: {
