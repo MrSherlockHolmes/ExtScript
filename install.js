@@ -16,7 +16,7 @@
     ext.install = function (install) {
         if (install == 'operators') {
             // use proxy [hosted by scratchext]
-            jQuery.getScript('scratchextproxy.x10.mx/extscript.php?file=operators.js');
+            jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=operators.js');
         }
     }
     // Block and block menu descriptions
