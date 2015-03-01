@@ -11,7 +11,7 @@
       return true;
     };
     ext.install = function (install) {
-        if (install == operators) {
+        if (install == 'operators') {
             jQuery.getScript('https://raw.githubusercontent.com/MrSherlockHolmes/ExtScript/master/operators.js');
         }
     }
