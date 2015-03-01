@@ -79,5 +79,7 @@
     },        
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
+    
+    ScratchExtensions.unregister('ScriptExt: Operators');
     ScratchExtensions.register('ScriptExt: Operators', descriptor, ext);
 })();   
