@@ -66,6 +66,9 @@
     ext.admincheck = function() {
       return Scratch.INIT_DATA.ADMIN;
     }
+    ext.thumbnail = function() {
+    window.open(Scratch.INIT_DATA.LOGGED_IN_USER.model.thumbnail_url); 
+    }
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
@@ -74,7 +77,9 @@
             ['b', '%m.tf', 'truefalse', 'true'],
             ['b', 'is user an admin?', 'admincheck'],
             ['-'],
-            ['r', '%m.mathobj', 'math', 'e']
+            ['r', '%m.mathobj', 'math', 'e'],
+            ['-'],
+            [' ', 'Open thumbnail image', 'thumbnail']
         ],
     menus: {
         both: ['negative', 'positive'],
