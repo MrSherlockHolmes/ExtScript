@@ -31,5 +31,7 @@
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
+    
+    ScratchExtensions.unregister('ScriptExt');
     ScratchExtensions.register('ScriptExt', descriptor, ext);
-})();    
+})();
