@@ -17,9 +17,7 @@
         if (install == 'operators') {
             // use proxy [hosted by scratchext]
             jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=operators.js');
-        } else if (intall == 'data') {
-            jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=data.js'); 
-    }
+        }
     }
     // Block and block menu descriptions
     var descriptor = {
