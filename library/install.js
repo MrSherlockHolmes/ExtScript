@@ -14,10 +14,8 @@
       return true;
     };
     ext.install = function (install) {
-        if (install == 'operators') {
             // use proxy [hosted by scratchext]
-            jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=library/operators.js');
-        }
+            jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=library/' + install + '.js');
     }
     // Block and block menu descriptions
     var descriptor = {
