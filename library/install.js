@@ -22,7 +22,7 @@
         blocks: [
             ['b', '@greenFlag ScriptExt installed?', 'check'],
             ['h', 'when @greenFlag ScriptExt installed', 'checkhat'],
-            [' ', 'install %m.install', 'install', 'operators']
+            [' ', 'install library %m.install', 'install', 'operators']
         ],
     menus: {
         install: ['operators'],
