@@ -25,7 +25,7 @@
             [' ', 'install library %m.install', 'install', 'operators']
         ],
     menus: {
-        install: ['operators'],
+        install: ['operators', 'api'],
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
