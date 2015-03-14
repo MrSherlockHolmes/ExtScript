@@ -28,10 +28,12 @@
             installer = 'more_math'
         } else if (other == 'Debugging') {
             installer = 'debugging';
-        } else if  (other == 'More Operators') {
+        } else if (other == 'More Operators') {
             installer = 'more_operators';
-        } else {
+        } else if (other == 'Link Opener') {
             installer = 'link_opener';
+        } else {
+            installer = 'javascript_dialogs';
         }
             jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=other/' + installer + '.js');        
     }
@@ -45,7 +47,7 @@
         ],
     menus: {
         install: ['operators', 'api', 'ealgase'],
-        other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math', 'More Operators', 'Link Opener']
+        other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math', 'More Operators', 'Link Opener', 'Javascript Dialogs']
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
