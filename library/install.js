@@ -24,6 +24,8 @@
             installer = 'browser_stuff';
         } else if (other == 'Cool helpful things extension') {
             installer = 'cool_helpful';
+        } else if (other == 'More math') {
+            installer = 'more_math'
         } else {
             installer = 'debugging';
         }
@@ -39,7 +41,7 @@
         ],
     menus: {
         install: ['operators', 'api'],
-        other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging']
+        other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math']
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
