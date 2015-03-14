@@ -40,7 +40,7 @@
             [' ', 'install other library %m.other', 'other', 'Alarm Extension']
         ],
     menus: {
-        install: ['operators', 'api'],
+        install: ['operators', 'api', 'ealgase'],
         other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math']
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
