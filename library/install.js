@@ -26,8 +26,10 @@
             installer = 'cool_helpful';
         } else if (other == 'More math') {
             installer = 'more_math'
-        } else {
+        } else if (other == 'Debugging') {
             installer = 'debugging';
+        } else {
+            installer = 'more_operators';
         }
             jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=other/' + installer + '.js');        
     }
