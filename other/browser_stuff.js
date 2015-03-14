@@ -1,3 +1,4 @@
+/* Scratch Team */
 (function(ext) {
     ext.alert = function(message) {
         alert(message);
