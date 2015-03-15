@@ -32,6 +32,8 @@
             installer = 'more_operators';
         } else if (other == 'Link Opener') {
             installer = 'link_opener';
+        } else if (other == 'Kvaxtension') {
+            installer = 'kvaxtension'
         } else {
             installer = 'javascript_dialogs';
         }
@@ -47,7 +49,7 @@
         ],
     menus: {
         install: ['operators', 'api', 'ealgase'],
-        other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math', 'More Operators', 'Link Opener', 'Javascript Dialogs']
+        other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math', 'More Operators', 'Link Opener', 'Javascript Dialogs', 'Kvaxtension']
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
