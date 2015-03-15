@@ -24,7 +24,7 @@
             installer = 'browser_stuff';
         } else if (other == 'Cool helpful things extension') {
             installer = 'cool_helpful';
-        } else if (other == 'More math') {
+        } else if (other == 'More Math') {
             installer = 'more_math'
         } else if (other == 'Debugging') {
             installer = 'debugging';
