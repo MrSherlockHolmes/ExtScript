@@ -1,3 +1,4 @@
+//Warning! Untested. This may loop forever.
 (function () {
     var ext = this;
     ext._shutdown = function () {};
