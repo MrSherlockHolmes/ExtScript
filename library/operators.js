@@ -69,6 +69,9 @@
     ext.thumbnail = function() {
     window.open(Scratch.INIT_DATA.LOGGED_IN_USER.model.thumbnail_url); 
     }
+    ext.cogito = function(str) {
+      return eval(str);
+    }
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
@@ -78,6 +81,7 @@
             ['b', 'is user an admin?', 'admincheck'],
             ['-'],
             ['r', '%m.mathobj', 'math', 'e'],
+            ['r', 'calculate %s', 'cogito', '7 * 5']
             ['-'],
             [' ', 'Open thumbnail image', 'thumbnail']
         ],
