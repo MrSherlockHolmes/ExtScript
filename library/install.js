@@ -13,9 +13,14 @@
     ext.checkhat = function () {
       return true;
     };
-    ext.install = function (install) {
+    ext.install = function (install, installer) {
             // use proxy [hosted by scratchext]
-            jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=library/' + install + '.js');
+        if (install == 'string stuff') {
+            installer = 'string_stuff';
+        } else {
+            installer = install
+        }
+            jQuery.getScript('http://scratchextproxy.x10.mx/extscript.php?file=library/' + installer + '.js');
     }
     ext.other = function (other, installer) {
         if (other == 'Alarm Extension') {
@@ -48,7 +53,7 @@
             [' ', 'install other library %m.other', 'other', 'Alarm Extension']
         ],
     menus: {
-        install: ['operators', 'api', 'ealgase'],
+        install: ['operators', 'api', 'ealgase', 'string stuff'],
         other: ['Alarm Extension', 'Browser Stuff', 'Cool helpful things extension', 'Debugging', 'More Math', 'More Operators', 'Link Opener', 'Javascript Dialogs', 'Kvaxtension']
     },                
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
