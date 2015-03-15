@@ -81,7 +81,7 @@
             ['b', 'is user an admin?', 'admincheck'],
             ['-'],
             ['r', '%m.mathobj', 'math', 'e'],
-            ['r', 'calculate %s', 'cogito', '7 * 5']
+            ['r', 'calculate %s', 'cogito', '7 * 5'],
             ['-'],
             [' ', 'Open thumbnail image', 'thumbnail']
         ],
