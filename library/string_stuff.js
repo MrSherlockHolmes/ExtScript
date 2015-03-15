@@ -9,12 +9,7 @@
         };
     };
     ext.removecaps = function(str, i) {
-    for (i = -1; i = str.length; i++) {
-        if (str.charCodeAt(i) > 64 && str.charCodeAt(i) < 91) {
-            str.replace(str.charAt(i), "");
-        }
-    }
-        return str;
+        return str.toLowerCase();
     }
     // Block and block menu descriptions
     var descriptor = {
