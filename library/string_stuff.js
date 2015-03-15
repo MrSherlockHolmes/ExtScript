@@ -1,4 +1,3 @@
-//Warning! Untested. This may loop forever.
 (function () {
     var ext = this;
     ext._shutdown = function () {};
@@ -8,18 +7,22 @@
             msg: 'Installed'
         };
     };
-    ext.removecaps = function(str, i) {
-     for (i = -1; i = str.length; i++) {
-         if (str.charCodeAt(i) > 64 && str.charCodeAt(i) < 91) {
-             str.replace(str.charAt(i), "");
-        }
-     }
-         return str;
-    }
+    
+    // block functions
+    ext.removecaps = function(str, callback) {
+        // simple regular expression
+        callback(str.replace(/[A-Z]/g, '');
+    };
+    ext.removelowers = function(str, callback) {
+        // simple regular expression
+        callback(str.replace(/[a-z]/g, '');
+    };
+    
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['r', 'Remove caps from %s', 'removecaps', 'Hello!'],
+            ['R', 'Remove uppercase from %s', 'removecaps', 'Hello!'],
+            ['R', 'Remove lowercase from %s', 'removelowers', 'Hello!'],
         ],
         url: "https://github.com/MrSherlockHolmes/ExtScript/blob/master/README.md"        
     };
