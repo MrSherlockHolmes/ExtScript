@@ -1,3 +1,4 @@
+//Thanks kvackkvack! :P
 (function(ext) {
     var promptAnswer = "";
     ext._shutdown = function() {
