@@ -1,2 +1,28 @@
 /* savaka */
-ScratchExtensions.loadExternalJs("http://savakamyimages00000.weebly.com/uploads/6/4/5/3/6453739/debugging.js");
+new (function() {
+	var ext = this;
+	var descriptor = {
+		blocks: [
+			[' ', 'comment: %s', 'comment'],
+			[' ', 'print %s to web console', 'debug']
+		]
+	};
+	
+	ext._shutdown = function() {
+		
+	};
+	
+	ext._getStatus = function() {
+		return {status:2, msg:'Ready'};
+	};
+	
+	ext.comment = function(s) {
+		
+	};
+	
+	ext.debug = function(s) {
+		console.log(s);
+	};
+	
+	ScratchExtensions.register('Debugging', descriptor, ext);
+})();
