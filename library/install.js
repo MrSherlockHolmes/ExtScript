@@ -1,3 +1,7 @@
+/* JavaScript ScratchExt 'port'
+@Author: Sabri M
+@Username: MrSherlockHolmes
+*/
 (function () {
     var ext = this;
     ext._shutdown = function () {};
